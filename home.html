@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="home.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Here i am to turn the lamp on and off?</h2>
+
+    <div id="demo">
+        <p>JavaScript can hide HTML elements 1.</p>
+        <p>JavaScript can hide HTML elements 2.</p>
+    </div>
+
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Hide text!</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Show text!</button>
+
+
+    <button onclick="document.getElementById('myImage').src='Img/bulb-on.png'">Turn on the light</button>
+    <img class="img" id="myImage" src="Img/bulb-on.png" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Img/bulb-off.png'">Turn off the light</button>
+
+    <p>1.Number <input type="number" id="first"></p>
+    <p>2.Number <input type="number" id="second"></p>
+    <button onclick="minus()">-</button>
+    <button onclick="sum()">+</button>
+    <button onclick="division()">/</button>
+    <button onclick="multiply()">x</button>
+    <button onclick="Clear()">Clear</button>
+
+    <p>Result <input id="Result"></p>
+    <p>string text <input type="text" id="string"></p>
+    <button onclick="string()">Result</button>
+
+
+
+</body>
+
+
+</html>
